@@ -1,0 +1,80 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    max-width: 100vw;
+    --violeta:rgb(177, 20, 216);
+    --gris: #1c1c1d;
+}
+.header{
+    width: 1920px;
+    height: 95px;
+    /* outline: solid 1px blueviolet; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    animation-name: header;
+    animation-direction: normal;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: unset;
+    animation-play-state: unset;
+    animation-timing-function: ease-in;
+}
+@keyframes header{
+    0%{
+        background-color: NONE;
+    }
+    100%{
+        transition: background-color;
+        background-color:var(--gris);
+    }
+}
+
+.logopaka{
+    color: white;
+    height: 80px;
+    margin-top: 10px;
+    /* outline: 1px solid rgb(177, 20, 216); */
+}
+
+.menu{
+    /* outline: solid 1px blueviolet; */
+    /* margin-right: 40px; */
+    /* padding: 2%; */
+    display: flex;
+    position: relative;
+    width: 200px;
+    right: 80px;
+    justify-content: space-between;
+}
+.nav-link{
+    text-decoration: none;
+    color: white;
+    background-color:rgb(70, 71, 68);
+    padding: 3%; 
+    border-radius: 5%;   
+}
+
+.nav-link:hover{
+    text-decoration: none;
+    color: white;
+    background-color:var(--violeta);
+    border-radius: 15%;
+    transition: all 1s;
+}
+body{
+    /* margin-top: 110px; */
+    margin-bottom: 30px;
+    background-image: url(gente.jpg);
+    background-attachment: fixed;
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    background-color: var(--violeta);
+    justify-items: center;
+    
+}
