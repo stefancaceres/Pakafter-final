@@ -1,28 +1,23 @@
 *{
     margin: 0px;
     padding: 0px;
-    max-width: 100vw;
     --violeta:rgb(177, 20, 216);
     --gris: #1c1c1d;
+    font-family: roboto;
 }
 .header{
-    width: 1920px;
+    width: 100vw;
     height: 95px;
-    /* outline: solid 1px blueviolet; */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* position: absolute;
-    top: 0;
-    left: 0; */
     animation-name: header;
     animation-direction: normal;
     animation-duration: 1.5s;
     animation-fill-mode: forwards;
-    animation-iteration-count: unset;
-    animation-play-state: unset;
     animation-timing-function: ease-in;
-}
+    }
+
 @keyframes header{
     0%{
         background-color: NONE;
@@ -32,7 +27,6 @@
         background-color:var(--gris);
     }
 }
-
 .logopaka{
     color: white;
     height: 80px;
@@ -42,12 +36,10 @@
 
 .menu{
     /* outline: solid 1px blueviolet; */
-    /* margin-right: 40px; */
-    /* padding: 2%; */
+    margin-right: 40px;
     display: flex;
     position: relative;
     width: 200px;
-    right: 80px;
     justify-content: space-between;
 }
 .nav-link{
@@ -56,25 +48,81 @@
     background-color:rgb(70, 71, 68);
     padding: 3%; 
     border-radius: 5%;   
+    transition: border-radius 0.9s;
 }
 
 .nav-link:hover{
     text-decoration: none;
     color: white;
     background-color:var(--violeta);
-    border-radius: 15%;
+    border-radius: 15px;
     transition: all 1s;
 }
+
 body{
     /* margin-top: 110px; */
     margin-bottom: 30px;
-    background-image: url(gente.jpg);
+    background-image: url(img/gente.jpg);
     background-attachment: fixed;
     background-position: center; 
     background-repeat: no-repeat;
     background-size: cover;
     display: grid;
     background-color: var(--violeta);
+    justify-items: center;   
+}
+section{
+    display: grid;
     justify-items: center;
+    width: 100vw;
+}
+.cont2{
+    margin-top: 10px;
+    background-image: url(img/RISAS.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 950px;
+    display: grid;
+    /* justify-content: center; */
+    align-items: stretch;
+    width: min(90%,950px);
+    border: groove 8px var(--violeta) ;
+    background-color: var(--gris);
+}
+.ig{
+    border: groove 8px var(--violeta) ;
+    background-color: rgb(177, 186, 194);
+    width: min(70%,650px);
+    height: 250px;
+    margin: auto;
+    display: grid;
+
+}
+.logoig{
+    height: 150px;
+}
+
+.aig{
+    margin: auto;
+}
+
+.email{
+    margin: auto;
+    border: groove 8px var(--violeta) ;
+    background-color: rgb(177, 186, 194);
+    width: min(70%,650px);
+    height: 250px;
+    display: grid;
+}
+
+h2{
+    margin: auto;
+    font: roboto;
     
 }
+
+h1{
+    margin: auto;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
